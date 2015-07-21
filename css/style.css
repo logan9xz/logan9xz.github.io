@@ -10,7 +10,6 @@ p{
 	font-size: 13px;
 	font-style: italic;
 	color: orange;
-
 }	
 
 body{
@@ -19,7 +18,6 @@ body{
 
 img{
 	height: 100px;
-	float: right;
 }
 
 h2{
@@ -27,3 +25,8 @@ h2{
 	font-size: 20px;
 	font-style: italic;
 }
+
+.information {
+	border: solid blue;
+	border-left: blue;
+	border-left-color: blue;

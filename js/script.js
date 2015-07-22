@@ -1,2 +1,12 @@
-alert("I am a informational machine i am not real haha thats my robot laugh");
-	
+alert("Track and field were all the information comes from.");
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").hide();
+    });
+});
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#test").hide();
+    });
+});

@@ -7,7 +7,7 @@ h1{
 }
 
 p{
-	font-size: 13px;
+	font-size: 15px;
 	font-style: italic;
 	color: orange;
 }	
@@ -37,3 +37,9 @@ h2{
  	background-color:#DC143C;
  	color: black;
  }
+
+.pictures-from-events{
+	border: solid orange;
+	border-left: orange;
+	border-left-color:orange;
+}

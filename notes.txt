@@ -1,0 +1,9 @@
+3) Have you resolved the errors / warnings from the video include?
+5) think about how your site will look on a mobile device.
+6) start thinking about that animation!
+
+$(document).ready(function () {
+	
+
+	
+});

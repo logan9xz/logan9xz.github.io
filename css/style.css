@@ -8,8 +8,9 @@ h1{
 
 p{
 	font-size: 15px;
-	font-style: italic;
+	font-family: "Lucida Console", Monaco, monospace;
 	color: orange;
+	background-color: blue;
 }	
 
 body{
@@ -17,7 +18,9 @@ body{
 }
 
 img{
-	height: 125px;
+	height: 200px;
+	text-align: center;
+	width: 200px;
 }
 
 h2{
@@ -30,12 +33,13 @@ h2{
 	border: solid blue;
 	border-left: blue;
 	border-left-color: blue;
+
 }
 
-
- Q{
+Q{
  	background-color:#DC143C;
  	color: black;
+ 	font-family: Impact, Charcoal, sans-serif;
  }
 
 .pictures-from-events{

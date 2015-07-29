@@ -1,7 +1,7 @@
 
 
 
-h1{
+h2{
 	color:black;
 	font-size: 20px;
 }
@@ -14,15 +14,17 @@ p{
 
 body{
 	background-color: #696969; 
+	background:"http://www.friedmanarchives.com/Kids%20and%20Sports/images/Track%20and%20Field%20-%20wide%20and%20empty%20DSC06142.jpg">
 }
 
 img{
 	height: 200px;
 	text-align: center;
 	width: 200px;
+
 }
 
-h2{
+h3{
 	color: red;
 	font-size: 20px;
 	font-style: italic;
@@ -45,4 +47,12 @@ Q{
 	border: solid orange;
 	border-left: orange;
 	border-left-color:orange;
+}
+.centerclass{
+	text-align: center;
+}
+h1{
+	color: #191970;
+	font-family: Impact, Charcoal, sans-serif;
+	height: 50;
 }

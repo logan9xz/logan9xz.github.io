@@ -1,8 +1,5 @@
-
-
-
 h2{
-	color:black;
+	color:red;
 	font-size: 20px;
 }
 
@@ -10,7 +7,7 @@ p{
 	font-size: 15px;
 	font-family: "Lucida Console", Monaco, monospace;
 	color: red;
-	background-color: black
+	background-color: black;
 }	
 
 body{
@@ -35,12 +32,11 @@ h3{
 	border: solid blue;
 	border-left: blue;
 	border-left-color: blue;
-
 }
 
 Q{
  	background-color: black;
- 	color: blue;
+ 	color: red;
  	font-family: Impact, Charcoal, sans-serif;
  }
 
@@ -48,12 +44,13 @@ Q{
 	border: solid orange;
 	border-left: orange;
 	border-left-color:orange;
+	color: yellow;
 }
 .centerclass{
 	text-align: center;
 }
 h1{
-	color: blue;
+	color: red;
 	font-family: Impact, Charcoal, sans-serif;
 	height: 50;
 }

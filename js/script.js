@@ -1,6 +1,3 @@
-
-
-
 var visible = true;
 $(document).ready(function(){
 

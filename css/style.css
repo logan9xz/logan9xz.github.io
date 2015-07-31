@@ -9,7 +9,8 @@ h2{
 p{
 	font-size: 15px;
 	font-family: "Lucida Console", Monaco, monospace;
-	color: orange;
+	color: red;
+	background-color: black
 }	
 
 body{
@@ -38,8 +39,8 @@ h3{
 }
 
 Q{
- 	background-color:#DC143C;
- 	color: black;
+ 	background-color: black;
+ 	color: blue;
  	font-family: Impact, Charcoal, sans-serif;
  }
 

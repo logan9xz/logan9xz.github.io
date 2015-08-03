@@ -18,3 +18,13 @@ $(document).ready(function(){
 });
 
 alert("Track and field were all the information comes from.");
+
+function submitEmail () {
+	var email = $("#emailInput").val();
+	$.ajax({
+		type: "POST",
+		url: "http://localhost:3000/join",
+		data: { email: email },
+		success: function (data) { console.log(data); alert("success"); }
+	});
+}

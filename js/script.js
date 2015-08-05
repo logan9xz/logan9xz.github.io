@@ -1,3 +1,4 @@
+var url = "http://logan9xz.azurewebsites.net/join";
 var visible = true;
 $(document).ready(function(){
 
@@ -17,47 +18,32 @@ $(document).ready(function(){
 	});
 });
 
-alert("Track and field were all the information comes from.");
+// alert("Track and field were all the information comes from.");
+
+// function submitEmail () {
+// 	var email = $("#emailInput").val();
+// 	$.ajax({
+// 		type: "POST",
+// 		url: "http://localhost:3000/join",
+// 		data: { email: email },
+// 		success: function (data) { console.log(data); alert("success"); }
+// 	});
+// 
 
 function submitEmail () {
 	var email = $("#emailInput").val();
-	$.ajax({
-		type: "POST",
-		url: "http://localhost:3000/join",
-		data: { email: email },
-		success: function (data) { console.log(data); alert("success"); }
-	});
-}
-
-	var url = "http://logan9xz.azurewebsites.net/join";
-var visible = true;
-$(document).ready(function(){
-
-	$("#gofast").hide();
-	$("button").click(function(){
-		if (visible) {	
-			$("#gofast").show();  
-	    	$("p").hide();
-	    	visible = false;
-		} else {
-
-
-			$("p").show();
-			$("#gofast").hide();
-			visible = true;
-		}
-	});
-});
-
-function submitEmail () {
-	var email = $("#emailInput").val();
+	var email = $("#nameInput").val();
 	if (isValidEmailAddress(email)) {
 		$.ajax({
 			type: "POST",
-			url: url,
-			data: { email: email },
-			success: function (data) { console.log(data); alert("Success");},
-			error: function (error) {
+			url: url + "join",
+			data: { 
+				email: email, 
+				name: name
+		},
+		success: function (data) { console.log(data); alert("Success");
+		},
+		error: function (error) {
 				var code = error.status;
 				switch (code) {
 					case 500:
@@ -75,8 +61,9 @@ function submitEmail () {
 			}
 		});
 		$("#emailInput").val("");
+		$("#nameInput").val("");
 		} else {
-			alert("That's not a vaild email address!");
+			alert("Please provide a name and vaild email address!");
 	}
 }
 
@@ -85,4 +72,5 @@ function isValidEmailAddress(emailAddress) {
     var pattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
     return pattern.test(emailAddress);
 };
+
 

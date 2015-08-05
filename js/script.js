@@ -1,4 +1,4 @@
-var url = "http://logan9xz.azurewebsites.net/join";
+
 var visible = true;
 $(document).ready(function(){
 
@@ -30,39 +30,42 @@ $(document).ready(function(){
 // 	});
 // 
 
+var url = "http://logan9xz.azurewebsites.net/";
 function submitEmail () {
 	var email = $("#emailInput").val();
-	var email = $("#nameInput").val();
-	if (isValidEmailAddress(email)) {
+	var name = $("#nameInput").val();
+	if (name && isValidEmailAddress(email)) {
 		$.ajax({
 			type: "POST",
 			url: url + "join",
 			data: { 
 				email: email, 
 				name: name
-		},
-		success: function (data) { console.log(data); alert("Success");
-		},
-		error: function (error) {
-				var code = error.status;
-				switch (code) {
-					case 500:
-						alert("Something went wrong!")
-						break;
-					case 400:
-						alert("Bad email address!");
-						break;
-					case 409:
-						alert("Email already on the list!");
-						break;
-						default:
+			},
+			success: function (data) { 
+				console.log(data); 
+				alert("Success");
+			},
+			error: function (error) {
+					var code = error.status;
+					switch (code) {
+						case 500:
+							alert("Something went wrong!");
 							break;
+						case 400:
+							alert("Bad email address!");
+							break;
+						case 409:
+							alert("Email already on the list!");
+							break;
+							default:
+								break;
+					}
 				}
-			}
 		});
 		$("#emailInput").val("");
 		$("#nameInput").val("");
-		} else {
+	} else {
 			alert("Please provide a name and vaild email address!");
 	}
 }

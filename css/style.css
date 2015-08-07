@@ -34,7 +34,7 @@ h3{
 	border-left-color: blue;
 }
 
-Q{
+q{
  	background-color: black;
  	color: red;
  	font-family: Impact, Charcoal, sans-serif;
@@ -53,4 +53,8 @@ h1{
 	color: red;
 	font-family: Impact, Charcoal, sans-serif;
 	height: 50;
+}
+
+.last-div {
+	padding: 25px;
 }

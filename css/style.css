@@ -1,20 +1,18 @@
-
-
-
 h2{
-	color:black;
+	color:red;
 	font-size: 20px;
 }
 
 p{
 	font-size: 15px;
 	font-family: "Lucida Console", Monaco, monospace;
-	color: orange;
+	color: red;
+	background-color: black;
 }	
 
 body{
-	background-color: #696969; 
-	background:"http://www.friedmanarchives.com/Kids%20and%20Sports/images/Track%20and%20Field%20-%20wide%20and%20empty%20DSC06142.jpg">
+	background-color: #696969;
+	background-image: url("http://upload.wikimedia.org/wikipedia/commons/1/17/Track_and_field_stadium-2.jpg"); 
 }
 
 img{
@@ -34,12 +32,11 @@ h3{
 	border: solid blue;
 	border-left: blue;
 	border-left-color: blue;
-
 }
 
 Q{
- 	background-color:#DC143C;
- 	color: black;
+ 	background-color: black;
+ 	color: red;
  	font-family: Impact, Charcoal, sans-serif;
  }
 
@@ -47,12 +44,13 @@ Q{
 	border: solid orange;
 	border-left: orange;
 	border-left-color:orange;
+	color: yellow;
 }
 .centerclass{
 	text-align: center;
 }
 h1{
-	color: #191970;
+	color: red;
 	font-family: Impact, Charcoal, sans-serif;
 	height: 50;
 }
